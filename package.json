@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "node-sass": "^4.9.4"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
@@ -13,7 +15,8 @@
     "gulp-uglify": "^3.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass" : "node-sass app/sass/style.scss app/css/style.css"
   },
   "author": "",
   "license": "ISC"
