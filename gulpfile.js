@@ -6,14 +6,23 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
 gulp.task('styles', function () {
-    return gulp.src(["app/sass/style.scss"])
+    return gulp.src(["app/sass/main.scss"])
       .pipe(sass())
       .pipe(autoprefixer({
         browsers: ['last 2 versions']
-      }))
-      .pipe(nano())
-      .pipe(gulp.dest("app/css"));
+      }))    
+      .pipe(gulp.dest("app/css/"));
 });
+
+// gulp.task('styles', function () {
+//     return gulp.src(["app/sass/main.scss"])
+//       .pipe(sass())
+//       .pipe(autoprefixer({
+//         browsers: ['last 2 versions']
+//       }))
+//       .pipe(nano())
+//       .pipe(gulp.dest("app/css/"));
+// });
 
 
 

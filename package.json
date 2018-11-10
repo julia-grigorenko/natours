@@ -16,7 +16,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass" : "node-sass app/sass/style.scss app/css/style.css"
+    "compile:sass" : "node-sass natours/app/sass/style.scss > natours/app/css/style.css",
+    "templates:sass" : "node-sass templates/grid.scss > templates/grid.css"
   },
   "author": "",
   "license": "ISC"
